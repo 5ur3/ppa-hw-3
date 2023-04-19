@@ -1,0 +1,12 @@
+a = .;
+b = .;
+c = .;
+
+assert ((((a * a) * a) + (b * (b * b))) == ((c * c) * c));
+
+assert (a == b);
+assert (b == c);
+assert (a == c);
+assert (0 < a);
+assert (b < 0);
+assert (c < 0);

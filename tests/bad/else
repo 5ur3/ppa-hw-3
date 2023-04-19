@@ -1,0 +1,13 @@
+x = .;
+
+if (10 <= x) {
+    assert (x <= 10);
+    assert (x <= 9);
+    assert (x == 8);
+} else {
+    if (x != 13) {
+        assert ((x + .) == 13);
+    } else {};
+};
+
+assert (x != 14);

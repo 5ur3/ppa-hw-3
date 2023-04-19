@@ -1,0 +1,23 @@
+x = .;
+y = .;
+z = .;
+
+r = .;
+
+xToCheck = .;
+yToCheck = .;
+zToCheck = .;
+
+diffX = (xToCheck - x) * (xToCheck - x);
+diffY = (yToCheck - y) * (yToCheck - y);
+diffZ = (zToCheck - z) * (zToCheck - z);
+
+diffR = (diffX + diffY) + diffZ;
+
+rSquared = r * r;
+
+if (rSquared <= diffR) {
+    assert (rSquared < diffR);
+} else {
+    assert (diffR < rSquared);
+};

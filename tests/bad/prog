@@ -1,0 +1,7 @@
+a = .;
+
+a = a * 1 + 2;
+
+if (a < 8) {
+  assert (false);
+} else {};
